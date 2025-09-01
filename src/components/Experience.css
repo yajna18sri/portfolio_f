@@ -1,0 +1,324 @@
+.experience {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.experience-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.section-header-inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-icon {
+  font-size: 1.4rem;
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+  padding: 0.75rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.section-header-inline:hover .section-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+}
+
+.section-header-inline h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  border: 3px solid #1a1a1a;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateX(5px);
+}
+
+.timeline-header {
+  margin-bottom: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.timeline-company {
+  font-size: 0.95rem;
+  color: #667eea;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-details {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.timeline-period,
+.timeline-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+
+.timeline-period svg,
+.timeline-location svg {
+  color: #667eea;
+}
+
+.timeline-description {
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.timeline-achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
+}
+
+.timeline-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.certification-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  flex: 1;
+}
+
+.certification-date {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.certification-issuer {
+  color: #667eea;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.certification-description {
+  color: #a0a0a0;
+  line-height: 1.6;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.certification-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-content {
+    gap: 3rem;
+  }
+
+  .experience-section {
+    padding: 2rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    gap: 2rem;
+  }
+
+  .experience-section {
+    padding: 1.5rem;
+  }
+
+  .section-header-inline h3 {
+    font-size: 1.4rem;
+  }
+
+  .section-icon {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -2rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+  }
+
+  .timeline-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card {
+    padding: 1.25rem;
+  }
+
+  .certification-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .certification-date {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+} 
